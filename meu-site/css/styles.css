@@ -1,0 +1,9 @@
+
+.active{
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+
+footer{
+    background-color: #A4C6E5;
+}

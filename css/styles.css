@@ -1,0 +1,16 @@
+
+.active{
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+.bùtton
+textarea{
+    resize: none !important;
+}
+footer{
+    background-color: #A4C6E5;
+}
+
+.active-fotos{
+    font-weight: bold !important;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS personalizado -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Nike</title>
+</head>
+
+<body>
+	<main>
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/logo.svg" alt="logo" title="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item ">
+						<a class="nav-link " href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="historia.html">Historia</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="curiosidades.html">Curiosidades</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Fotos
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="blusa.html">Blusa</a>
+						<a class="dropdown-item" href="camisa-azul.html">Camisa azul Hello Kitty</a>
+						<a class="dropdown-item" href="camisa-branca.html">Camisa branca Hello Kitty</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="contato.html">Contato</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="img/nike-01.png" alt="Primeiro Slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="img/nike-01.png" alt="Segundo Slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="img/nike-01.png" alt="Terceiro Slide">
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Anterior</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Próximo</span>
+	</a>
+</div>
+
+
+
+<br>
+<div class="container">
+	<h4 class="alert alert-light shadow">Contato</h4>
+
+	<br>
+
+	<form class="needs-validation" novalidate>
+		<div class="form-row">
+			<div class="col-md-6 mb-3">
+				<label for="validationCustom01">Nome</label>
+				<input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+				<div class="invalid-feedback">
+					Preencha o nome!
+				</div>
+			</div>
+
+			<div class="col-md-6 mb-3">
+				<label for="validationCustom02">Sobrenome</label>
+				<input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
+				<div class="invalid-feedback">
+					Preencha o sobrenome!
+				</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="col-md-8 mb-3">
+				<label for="validationCustom03">Email</label>
+				<input type="email" class="form-control" id="validationCustom03" placeholder="Email" required>
+				<div class="invalid-feedback">
+					Preencha o email!
+				</div>
+			</div>
+			<div class="col-md-4 mb-3">
+				<label for="validationCustom04">Telefone</label>
+				<input type="text" class="form-control" id="validationCustom04" placeholder="Telefone" required>
+				<div class="invalid-feedback">
+					Preencha o telefone!
+				</div>
+			</div>
+		</div>
+
+		<div class="form-row">
+			<div class="col-md-12 mb-3">
+				<label for="validationCustom04">Comentario</label>
+				<textarea name="comentario" class="form-control" id="validationCustom04" placeholder="Comentario" rows="10" required></textarea>
+				<div class="invalid-feedback">
+					Preencha o comentario!
+				</div>
+			</div>
+		</div>
+
+
+
+			<button class="btn btn-primary" type="submit">Enviar</button>
+		</form>
+
+		<script>
+// Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+(function() {
+	'use strict';
+	window.addEventListener('load', function() {
+    // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+    var forms = document.getElementsByClassName('needs-validation');
+    // Faz um loop neles e evita o envio
+    var validation = Array.prototype.filter.call(forms, function(form) {
+    	form.addEventListener('submit', function(event) {
+    		if (form.checkValidity() === false) {
+    			event.preventDefault();
+    			event.stopPropagation();
+    		}
+    		form.classList.add('was-validated');
+    	}, false);
+    });
+}, false);
+})();
+</script>
+
+<p>&nbsp;</p>
+<!-- Fim do conteudo do site -->
+
+</main>
+
+<!-- Inicio Rodape -->
+
+<footer class="footer mt-auto py-3">
+	<div class="container text-center">
+		<a href="index.html">
+			<img src="img/logo.svg" alt="Nike Logo" title="Nike Logo">
+		</a><br>
+		<span class="text-light">Senac Vila Prudente - Todos os direitos reservados</span>
+	</div>
+</footer>
+
+<!-- Fim do Rodape-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Js Bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+crossorigin="anonymous"></script>
+</body>
+
+</html>
